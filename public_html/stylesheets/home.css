@@ -63,6 +63,7 @@ select {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    text-align: center;
 }   
 table, th, td{
     border: 3px solid #B6B6B6;
@@ -82,11 +83,23 @@ tr:hover {
 .center-div {
     text-align: center;
 }
-.hover-img :hover{
+
+.hover-img :hover {
     width: 110%;
     height: 110%;
 }
 
+.float-img {
+    width: 475px;
+    height: 400px;
+    float: left;
+    margin-right: 30px;
+}
+.foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 #management {
     font-size: 20px;
 }
