@@ -7,3 +7,30 @@
 [Mon Mar 28 21:11:27 2016] [error] [client 169.234.244.139] File does not exist: /home/neerajk/apache_files/www/html/favicon.ico, referer: http://andromeda-10.ics.uci.edu:8080/
 [Mon Mar 28 21:11:34 2016] [error] [client 169.234.244.139] File does not exist: /home/neerajk/apache_files/www/html/index.html
 [Mon Mar 28 21:11:42 2016] [error] [client 169.234.244.139] File does not exist: /home/neerajk/apache_files/www/html/html
+[Wed Apr 13 11:52:06 2016] [error] (2)No such file or directory: mod_mime_magic: can't read magic file /home/gentryj/137P1/CS137-Project1/conf/magic
+[Wed Apr 13 11:52:06 2016] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Apr 13 11:52:06 2016] [error] (2)No such file or directory: mod_mime_magic: can't read magic file /home/gentryj/137P1/CS137-Project1/conf/magic
+[Wed Apr 13 11:52:06 2016] [notice] Digest: generating secret for digest authentication ...
+[Wed Apr 13 11:52:06 2016] [notice] Digest: done
+[Wed Apr 13 11:52:06 2016] [warn] pid file /home/gentryj/137P1/CS137-Project1/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 13 11:52:06 2016] [notice] Apache/2.2.15 (Unix) DAV/2 configured -- resuming normal operations
+[Wed Apr 13 11:52:09 2016] [error] [client 10.13.65.162] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 11:56:14 2016] [error] [client 10.13.65.162] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:17:12 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:17:13 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/favicon.ico
+[Wed Apr 13 13:17:13 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/favicon.ico
+[Wed Apr 13 13:20:53 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:24:48 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:24:49 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:24:49 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:24:50 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:24:50 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/assorted_pepper, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 13:30:46 2016] [error] [client 169.234.40.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/images/white_pepper.png, referer: http://andromeda-13.ics.uci.edu:6969/
+[Wed Apr 13 14:02:12 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/favicon.ico
+[Wed Apr 13 14:02:12 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/favicon.ico
+[Wed Apr 13 14:15:26 2016] [error] [client 169.234.92.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/favicon.ico, referer: http://andromeda-13.ics.uci.edu:6969/management/management.html
+[Wed Apr 13 14:19:43 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/peppers/images
+[Wed Apr 13 14:19:43 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/peppers/images
+[Wed Apr 13 14:19:43 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/peppers/images
+[Wed Apr 13 14:19:43 2016] [error] [client 169.234.68.143] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/peppers/images
+[Wed Apr 13 14:21:02 2016] [error] [client 169.234.92.14] File does not exist: /home/gentryj/137P1/CS137-Project1/public_html/peppers/white.html, referer: http://andromeda-13.ics.uci.edu:6969/
