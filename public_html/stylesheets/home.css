@@ -1,0 +1,92 @@
+/* 
+    Created on : Apr 12, 2016, 5:07:34 PM
+    Author     : jhempsey
+*/
+html, body {
+    width: 100%;
+}
+body {
+  background-color: #455A64;
+  color: #CFD8DC;
+  font-size: 16px;
+}
+h1 {
+  color: #4CAF50;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+h2 {
+  color: #B6B6B6;
+  text-align: center;
+  font-size: 25px;
+}
+h3 {
+  color: #212121;
+  font-size: 18px;
+}
+hr {
+  height: 3px;
+  width: 100%;
+  border: 0px;
+  background-color: #B6B6B6;
+}
+b {
+  text-align: center;
+  font-size: 20px;
+}
+input {
+    margin: 2px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    border: 0;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+select {
+    margin: 5px;
+    padding: 2px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    border: 0;
+    border-radius:6px;
+    height: 34px;
+    width: 200px;
+    margin-top: 10px;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}   
+table, th, td{
+    border: 3px solid #B6B6B6;
+    padding: 5px;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #607D8B;
+    color: #FFFFFF;
+}
+tr:hover {
+    background-color: #6FD8DC;
+    color: #727272;
+}
+
+.center-div {
+    text-align: center;
+}
+.hover-img :hover{
+    width: 110%;
+    height: 110%;
+}
+
+#management {
+    font-size: 20px;
+}
