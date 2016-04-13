@@ -9,24 +9,56 @@
     <body>
         <h1>Peter sells peppers</h1>
         <h2>The Guantanamo Pepper</h2>
-        <p>
-            <img src='../images/guan-pepper.jpg' alt='Guantanamo Pepper'
-                 class='float-img' >
-            Hotter than balls.
-        </p>
-        <div class='price'> 
-            $1,000,000
+        <div class='prod-info'>
+            <div class='float-img'>
+                <img src='../images/guan-pepper.jpg' alt='Guantanamo Pepper'
+                     class='float-img' >
+            </div>
+            <div class='description'>
+                Hotter than balls
+            </div>
+            <div class='price'> 
+                Price: $1,000,000
+            </div>
+        </div>
+        <div class='order'>
+            <form method='post' id='order-form'>
+                <div id ='name'>
+                    <label class='form-label'> First Name: </label>
+                    <input type="text" class="in_txt" id="first-name">
+                </div>
+                <div>
+                    <label class='form-label'> Last Name: </label>
+                    <input type="text" class="in_txt" id="last-name">
+                </div>
+                <div id='cc-info'>
+                    <label class='form-label'> Credit Card: </label>
+                    <input type="text" class="in_txt" id="credit-card">
+                </div>
+                <p> Shipping information:</p>
+                <div id='ship-info'>
+                    <label class='form-label'>Street Address: </label>
+                    <input type="text" class="in_txt" id="address">
+                    <div>
+                        <label class='form-label'> Zip code: </label>
+                        <input type="text" class="in_txt" id="zip-code">
+                        <label class='form-label'> State </label>
+                        <input type="text" class="in_txt" id="state">
+                    </div>
+                </div>
+                <div id='submit-btn-div'>
+                    <input type='submit' value='Purchase' id='submit-btn'>
+                </div>
+            </form>
         </div>
         
-        
-        
-        <br>
+<!--        
         <footer class='foot'>
-            <a href='management/management.html'>
+            <a href='../management/management.html'>
                 <div class='center-div' id='management' >
                     Management Team
                 </div>
             </a>
-        </footer>
+        </footer>-->
     </body>
 </html>

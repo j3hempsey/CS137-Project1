@@ -44,7 +44,7 @@ input {
     line-height: 1;
     border: 0;
     border-radius: 6px;
-    height: 34px;
+    height: 15px;
     margin-top: 10px;
 }
 
@@ -88,18 +88,61 @@ tr:hover {
     width: 110%;
     height: 110%;
 }
-
+.prod-info {
+    width: 100%;
+    margin: 0 auto;
+}
 .float-img {
     width: 475px;
     height: 400px;
     float: left;
     margin-right: 30px;
 }
+
+.description {
+    float: right;
+    width: 60%;
+}
+.price {
+    width: 60%;
+    clear: both;
+    float: right;
+}
+
+.form-label {
+    margin: 2px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.order {
+    clear: both;
+    width: 600px;
+    margin: 0 auto;
+}
+.in_txt{
+    width: 300px;
+}
+#zip-code {
+    width: 100px;
+}
+#state {
+    width: 200px;
+}
+
 .foot {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #4CAF50
+}
+#submit-btn {
+    height: 34px;
 }
 #management {
+    
     font-size: 20px;
 }
