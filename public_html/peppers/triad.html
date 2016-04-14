@@ -19,16 +19,60 @@
         <div class='price'> 
             $1,000,000
         </div>
+        <div class='order'>
+            <form method='post' id='order-form'>
+                <table class='ship-form'>
+                    <tbody>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" class="in_txt" id="first-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" class="in_txt" id="last-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Credit Card:</td>
+                            <td><input type="text" class="in_txt" id="credit-card"></td>
+                        </tr>
+                        <tr>
+                            <td>Street Address:</td>
+                            <td><input type="text" class="in_txt" id="address"></td>
+                        </tr>
+                        <tr>
+                            <td>Zip code:</td>
+                            <td><input type="text" class="in_txt" id="zip-code"></td>
+                        </tr>
+                        <tr>
+                            <td>State:</td>
+                            <td><input type="text" class="in_txt" id="state"></td>
+                        </tr>
+                        <tr> 
+                            <td>Quantity:</td>
+                            <td><input type="text" class="in_txt" id="quantity"></td>
+                        </tr>
+                        <tr>
+                            <td>Shipping speed:</td>
+                            <td>
+                                <input type="radio" name="ship" value="one-day"> Burn my mouth tomorrow<br>
+                                <input type="radio" name="ship" value="two-day"> Burn my mouth two days from now<br>
+                                <input type="radio" name="ship" value="other" checked="checked"> Burn my mouth whenever it gets here
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div id='submit-btn-div'>
+                    <input type='submit' value='Purchase' id='submit-btn'>
+                </div>
+            </form>
+        </div>
         
-        
-        
-        <br>
-        <footer class='foot'>
-            <a href='management/management.html'>
+        <br><br>
+            <a href='../management/management.html'>
                 <div class='center-div' id='management' >
                     Management Team
                 </div>
             </a>
-        </footer>
     </body>
 </html>

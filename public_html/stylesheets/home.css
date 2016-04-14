@@ -65,7 +65,11 @@ table {
     margin: 0 auto;
     text-align: center;
 }   
-table, th, td{
+table.home-table thead tr td {
+    border: 3px solid #B6B6B6;
+    padding: 5px;
+}
+table.home-table tbody tr td {
     border: 3px solid #B6B6B6;
     padding: 5px;
 }
@@ -75,9 +79,13 @@ th {
     background-color: #607D8B;
     color: #FFFFFF;
 }
-tr:hover {
+table.home-table tr:hover {
     background-color: #6FD8DC;
     color: #727272;
+}
+
+table.ship-form tbody tr td{
+    font-size: 17px;
 }
 
 .center-div {
@@ -120,11 +128,12 @@ tr:hover {
 
 .order {
     clear: both;
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
 }
 .in_txt{
     width: 300px;
+    text-align: left;
 }
 #zip-code {
     width: 100px;
@@ -133,16 +142,14 @@ tr:hover {
     width: 200px;
 }
 
-.foot {
-    position: absolute;
-    bottom: 0;
+#submit-btn-div {
+    text-align: center;
     width: 100%;
-    background-color: #4CAF50
 }
 #submit-btn {
     height: 34px;
+    margin: 0 auto;
 }
 #management {
-    
     font-size: 20px;
 }
