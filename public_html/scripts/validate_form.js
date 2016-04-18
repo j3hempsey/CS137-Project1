@@ -25,11 +25,7 @@ function checkAddress(address)
 function checkZip(zip)
 {
 	var regex = /^([0-9])/;
-<<<<<<< HEAD
 	return (regex.test(zip) && zip.length == 5);
-=======
-	return (regex.test(zip) && zip.length >= 5);
->>>>>>> bb487a462f7b0d44f2631abd616a84f311ce7e51
 }
 
 function checkState(state)
