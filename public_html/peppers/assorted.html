@@ -12,35 +12,22 @@
     <body>
         <h1>Peter sells peppers</h1>
         <h2 id="pepper-name">Assorted Peppers</h2>
+		<hr>
         <div class='prod-info'>
             <div class='float-img inline'>
                 <table>
                     <tbody>
                         <tr>
                             <td>
-                                <div class='hover-img'>
+                                <div class='product-img'>
                                 <img src='../images/assorted_pepper.png' alt='Guantanamo Pepper'
-                     class='img-preview' > </td>
+                     height="180" width="300" >
                                 </div>
-                            <td>
-                                <div class='hover-img'>
+                                <div class='product-img'>
                 <img src='../images/assorted_pepper1.jpeg' alt='Guantanamo Pepper'
-                     class='img-preview' > 
+                    height="180" width="300" > 
                                 </div>
                                 </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class='hover-img'>
-                                    <img src='../images/assorted_pepper2.jpeg' alt='Guantanamo Pepper'
-                     class='img-preview' > 
-                                </div>
-                                </td>
-                            <td>
-                                <div class='hover-img'>
-                <img src='../images/assorted_pepper3.jpeg' alt='Guantanamo Pepper'
-                     class='img-preview' > </div>
-                     </td>
                         </tr>
                     </tbody>
                 </table>   
@@ -55,6 +42,7 @@
             </div>
         </div>
         <div class='order'>
+		<hr>
             <form method='post' id='order-form' onsubmit='return processForm();'>
                 <table class='ship-form'>
                     <tbody>
@@ -103,14 +91,14 @@
                 <br>
                 <div id='submit-btn-div'>
                     <input type='submit' value='Purchase' id='submit-btn'>
+				<hr>
                 </div>
             </form>
         </div>
         
         <br><br>
-            <a href='../management/management.html'>
                 <div class='center-div' id='management' >
-                    Management Team
+                    <a href='../management/management.html'>Management Team</a> | <a href='/index.html'>Home</a>
                 </div>
             </a>
     </body>

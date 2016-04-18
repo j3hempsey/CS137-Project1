@@ -106,9 +106,9 @@ function processForm()
 		alert(error_message);
         return false;
 	}
-    	var pepperName = document.getElementById("pepper-name");
-	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName.value + 
-	"&body=Get me " + quantity.value + " " + pepperName.value + "!%0A%0A Send To: %0A" + first_name.value + " " + last_name.value + "%0A" + address.value + "%0A" + state.value + " " + zip.value;
+    var pepperName = document.getElementById("pepper-name");
+	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + "My Pepper Order" + 
+	"&body=Get me " + quantity.value + " " + pepperName.innerHTML + "!%0A%0A Send To: %0A" + first_name.value + " " + last_name.value + "%0A" + address.value + "%0A" + state.value + " " + zip.value;
 }
 
 var form = document.getElementById("order-form");

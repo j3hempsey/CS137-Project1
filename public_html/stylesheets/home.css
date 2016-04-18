@@ -6,7 +6,7 @@ html, body {
     width: 100%;
 }
 body {
-  background-color: #455A64;
+  background-color: #455A6F;
   color: #CFD8DC;
   font-size: 16px;
 }
@@ -16,11 +16,21 @@ h1 {
   font-size: 70px;
   margin-bottom: 0px;
   margin-top: 12px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 h2 {
-  color: #B6B6B6;
+  color: #FFFFFB;
   text-align: center;
   font-size: 25px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 h3 {
   color: #212121;
@@ -88,13 +98,19 @@ table.ship-form tbody tr td{
     font-size: 17px;
 }
 
+.subtitle-div {
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+}
+
 .center-div {
     text-align: center;
 }
 
 .hover-img :hover {
-    width: 110%;
-    height: 110%;
+    width: 102%;
+    height: 102%;
 }
 .prod-info {
     padding-left: 30px;
@@ -109,7 +125,7 @@ table.ship-form tbody tr td{
 
 .float-img {
     width:30%;
-    height: 400px;
+    height: 30%;
     float: left;
     margin-right: 30px;
 }
@@ -120,12 +136,16 @@ table.ship-form tbody tr td{
 
 .description {
     width: 100%;
-    float: left;
 }
 .price {
     width: 100%;
+	font-size: 125%;
     clear: both;
     float: left;
+}
+
+.pepper-name {
+	 
 }
 
 .form-label {
@@ -162,10 +182,16 @@ table.ship-form tbody tr td{
     margin: 0 auto;
 }
 #management {
-    font-size: 20px;
+    font-size: 35px;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 p {
     margin: 2cm 4cm 3cm 4cm;
 }
+div.prod-detail{ float:right; }
 div.inline { float:left; }
 .clearBoth { clear:both; }
