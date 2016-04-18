@@ -95,7 +95,12 @@ function processForm()
 		alert(error_message);
     return false;
 	}
-  return true;
+	var pepperName = document.getElementById("pepper-name").innerHTML;
+	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName + 
+	"&body=Get me " + quantity + " " + pepperName + "!%0A%0A Send To: %0A" + first_name + " " + last_name
+	+ "%0A" + address
+	+ "%0A" + state + " " + zip;
+  return false;
 }
 
 var form = document.getElementById("order-form");
