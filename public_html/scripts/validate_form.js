@@ -42,16 +42,15 @@ function checkQuantity(quantity)
 
 function processForm()
 {
-	var first_name = document.getElementById("first-name").value;
-	var last_name = document.getElementById("last-name").value;
-	var credit_card = document.getElementById("credit-card").value;
-	var address = document.getElementById("address").value;
-	var zip = document.getElementById("zip-code").value;
-	var state = document.getElementById("state").value;
-	var quantity = document.getElementById("quantity").value;
+	var first_name = document.getElementById("first-name");
+	var last_name = document.getElementById("last-name");
+	var credit_card = document.getElementById("credit-card");
+	var address = document.getElementById("address");
+	var zip = document.getElementById("zip-code");
+	var state = document.getElementById("state");
+	var quantity = document.getElementById("quantity");
 	var error_message = "Errors in the following fields: \n\n";
 	var error = false;
-	
 	if(!checkName(first_name.value))
 	{
 		error_message += "First name\n";
@@ -95,12 +94,9 @@ function processForm()
 		alert(error_message);
         return false;
 	}
-	var pepperName = document.getElementById("pepper-name").innerHTML;
-	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName + 
-	"&body=Get me " + quantity + " " + pepperName + "!%0A%0A Send To: %0A" + first_name + " " + last_name
-	+ "%0A" + address
-	+ "%0A" + state + " " + zip;
-  return false;
+    	var pepperName = document.getElementById("pepper-name").value;
+	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName.value + 
+	"&body=Get me " + quantity.value + " " + pepperName.value + "!%0A%0A Send To: %0A" + first_name.value + " " + last_name.value + "%0A" + address.value + "%0A" + state.value + " " + zip.value;
 }
 
 var form = document.getElementById("order-form");
