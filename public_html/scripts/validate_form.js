@@ -25,7 +25,11 @@ function checkAddress(address)
 function checkZip(zip)
 {
 	var regex = /^([0-9])/;
+<<<<<<< HEAD
 	return (regex.test(zip) && zip.length == 5);
+=======
+	return (regex.test(zip) && zip.length >= 5);
+>>>>>>> bb487a462f7b0d44f2631abd616a84f311ce7e51
 }
 
 function checkState(state)
@@ -42,13 +46,13 @@ function checkQuantity(quantity)
 
 function processForm()
 {
-	var first_name = document.getElementById("first-name");
-	var last_name = document.getElementById("last-name");
-	var credit_card = document.getElementById("credit-card");
-	var address = document.getElementById("address");
-	var zip = document.getElementById("zip-code");
-	var state = document.getElementById("state");
-	var quantity = document.getElementById("quantity");
+	var first_name = document.getElementById("first-name").value;
+	var last_name = document.getElementById("last-name").value;
+	var credit_card = document.getElementById("credit-card").value;
+	var address = document.getElementById("address").value;
+	var zip = document.getElementById("zip-code").value;
+	var state = document.getElementById("state").value;
+	var quantity = document.getElementById("quantity").value;
 	var error_message = "Errors in the following fields: \n\n";
 	var error = false;
 	
@@ -65,6 +69,9 @@ function processForm()
 	if(!checkCard(credit_card.value))
 	{
 		error_message += "Credit Card\n";
+		if(credit_card.length < 16) {
+			error_message += " Please enter at least 16 digits.\n";
+		}
 		error = true;
 	}
 	if(!checkAddress(address.value))
@@ -92,8 +99,15 @@ function processForm()
 		alert(error_message);
         return false;
 	}
-  return true;
+	var pepperName = document.getElementById("pepper-name").innerHTML;
+	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName + 
+	"&body=Get me " + quantity + " " + pepperName + "!%0A%0A Send To: %0A" + first_name + " " + last_name
+	+ "%0A" + address
+	+ "%0A" + state + " " + zip;
+  return false;
 }
 
-var form = document.getElementByID("order-form");
-form.onsubmit = processForm;
+var form = document.getElementById("order-form");
+form.onSubmit = processForm;
+
+
