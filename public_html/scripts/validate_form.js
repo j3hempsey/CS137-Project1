@@ -13,19 +13,19 @@ function checkName(name)
 function checkCard(creditCard)
 {
 	var regex = /^([0-9])/;
-	return (regex.test(name) && creditCard.length == 16);
+	return (regex.test(creditCard) && creditCard.length == 16);
 }
 
 function checkAddress(address)
 {
-	var regex = /^([0-9])+\ ([a-zA-Z])*/;
+	var regex = /^([0-9])+\ +([a-zA-Z])*/;
 	return regex.test(address);
 }
 
 function checkZip(zip)
 {
 	var regex = /^([0-9])/;
-	return (regex.test(zip) && zip.length == 6);
+	return (regex.test(zip) && zip.length == 5);
 }
 
 function checkState(state)
@@ -52,37 +52,37 @@ function processForm()
 	var error_message = "Errors in the following fields: \n\n";
 	var error = false;
 	
-	if(!checkName(first_name))
+	if(!checkName(first_name.value))
 	{
 		error_message += "First name\n";
 		error = true;
 	}
-	if(!checkName(last_name))
+	if(!checkName(last_name.value))
 	{
 		error_message += "Last name\n";
 		error = true;
 	}
-	if(!checkCard(credit_card))
+	if(!checkCard(credit_card.value))
 	{
 		error_message += "Credit Card\n";
 		error = true;
 	}
-	if(!checkAddress(address))
+	if(!checkAddress(address.value))
 	{
 		error_message += "Address\n";
 		error = true;
 	}
-	if(!checkZip(zip))
+	if(!checkZip(zip.value))
 	{
 		error_message += "Zip\n";
 		error = true;
 	}
-	if(!checkState(state))
+	if(!checkState(state.value))
 	{
 		error_message += "State\n";
 		error = true;
 	}
-	if(!checkQuantity(quantity))
+	if(!checkQuantity(quantity.value))
 	{
 		error_message += "Quantity\n";
 		error = true;
@@ -90,7 +90,7 @@ function processForm()
 	if(error)
 	{
 		alert(error_message);
-    return false;
+        return false;
 	}
   return true;
 }
