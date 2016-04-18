@@ -65,6 +65,9 @@ function processForm()
 	if(!checkCard(credit_card))
 	{
 		error_message += "Credit Card\n";
+		if(credit_card.length < 16) {
+			error_message += " Please enter at least 16 digits.\n";
+		}
 		error = true;
 	}
 	if(!checkAddress(address))

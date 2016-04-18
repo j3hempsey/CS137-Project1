@@ -97,24 +97,35 @@ table.ship-form tbody tr td{
     height: 110%;
 }
 .prod-info {
+    padding-left: 30px;
     width: 100%;
     margin: 0 auto;
 }
+
+.prod-detail {
+    width : 50%;
+    padding-left:50px;
+}
+
 .float-img {
-    width: 475px;
+    width:30%;
     height: 400px;
     float: left;
     margin-right: 30px;
 }
 
+.img-preview {
+    height:150px;
+}
+
 .description {
-    float: right;
-    width: 60%;
+    width: 100%;
+    float: left;
 }
 .price {
-    width: 60%;
+    width: 100%;
     clear: both;
-    float: right;
+    float: left;
 }
 
 .form-label {
@@ -156,3 +167,5 @@ table.ship-form tbody tr td{
 p {
     margin: 2cm 4cm 3cm 4cm;
 }
+div.inline { float:left; }
+.clearBoth { clear:both; }
