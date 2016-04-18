@@ -16,6 +16,12 @@ function checkCard(creditCard)
 	return (regex.test(creditCard) && creditCard.length == 16);
 }
 
+function checkPhone(phoneNumber)
+{
+	var regex = /^([0-9\--\-])/;
+	return (regex.test(phoneNumber) && (phoneNumber.length == 10 || phoneNumber.length == 12));
+}
+
 function checkAddress(address)
 {
 	var regex = /^([0-9])+\ +([a-zA-Z])*/;
@@ -49,6 +55,7 @@ function processForm()
 	var zip = document.getElementById("zip-code");
 	var state = document.getElementById("state");
 	var quantity = document.getElementById("quantity");
+	var phoneNumber = document.getElementById("phone");
 	var error_message = "Errors in the following fields: \n\n";
 	var error = false;
 	if(!checkName(first_name.value))
@@ -89,12 +96,17 @@ function processForm()
 		error_message += "Quantity\n";
 		error = true;
 	}
+	if(!checkPhone(phoneNumber.value))
+	{
+		error_message += "Phone number, formatted xxx-xxx-xxxx or 0000000000\n";
+		error = true;
+	}
 	if(error)
 	{
 		alert(error_message);
         return false;
 	}
-    	var pepperName = document.getElementById("pepper-name").value;
+    	var pepperName = document.getElementById("pepper-name");
 	window.location.href = "mailto:peterspepper@peterspepper.com?subject=" + pepperName.value + 
 	"&body=Get me " + quantity.value + " " + pepperName.value + "!%0A%0A Send To: %0A" + first_name.value + " " + last_name.value + "%0A" + address.value + "%0A" + state.value + " " + zip.value;
 }
