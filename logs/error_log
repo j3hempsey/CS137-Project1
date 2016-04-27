@@ -47,3 +47,16 @@
 [Sun Apr 17 19:29:15 2016] [notice] Digest: done
 [Sun Apr 17 19:29:15 2016] [notice] Apache/2.2.15 (Unix) DAV/2 configured -- resuming normal operations
 [Sun Apr 17 19:34:41 2016] [error] [client 128.195.70.151] File does not exist: /home/peterhn2/apache/public_html/images/john.jpg, referer: http://andromeda-13.ics.uci.edu:1234/management/management.html
+[Wed Apr 27 13:24:53 2016] [error] (2)No such file or directory: mod_mime_magic: can't read magic file /home/gentryj/137/137P2/CS137-Project1/conf/magic
+[Wed Apr 27 13:24:53 2016] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Apr 27 13:24:53 2016] [error] (2)No such file or directory: mod_mime_magic: can't read magic file /home/gentryj/137/137P2/CS137-Project1/conf/magic
+[Wed Apr 27 13:24:53 2016] [notice] Digest: generating secret for digest authentication ...
+[Wed Apr 27 13:24:53 2016] [notice] Digest: done
+[Wed Apr 27 13:24:53 2016] [warn] pid file /home/gentryj/137/137P2/CS137-Project1/run/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 27 13:24:53 2016] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.3 configured -- resuming normal operations
+[Wed Apr 27 13:25:11 2016] [error] [client 169.234.37.62] script '/home/gentryj/137/137P2/CS137-Project1/public_html/test.php' not found or unable to stat
+[Wed Apr 27 13:25:12 2016] [error] [client 169.234.37.62] File does not exist: /home/gentryj/137/137P2/CS137-Project1/public_html/favicon.ico
+[Wed Apr 27 13:25:12 2016] [error] [client 169.234.37.62] File does not exist: /home/gentryj/137/137P2/CS137-Project1/public_html/favicon.ico
+[Wed Apr 27 13:25:13 2016] [error] [client 169.234.37.62] script '/home/gentryj/137/137P2/CS137-Project1/public_html/test.php' not found or unable to stat
+[Wed Apr 27 13:25:21 2016] [error] [client 169.234.37.62] script '/home/gentryj/137/137P2/CS137-Project1/public_html/test.php' not found or unable to stat
+[Wed Apr 27 13:25:32 2016] [error] [client 169.234.37.62] PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Los_Angeles' for 'PDT/-7.0/DST' instead in /home/gentryj/137/137P2/CS137-Project1/public_html/php/test.php on line 2
